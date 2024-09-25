@@ -106,7 +106,7 @@
         display:block;
         justify-content: space-between;
         height: 40px;
-        z-index: 3;
+        z-index: 1;
         width: 100%;
         max-width: 1000px;
         padding: 1;
@@ -122,7 +122,7 @@
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
-        z-index: -1;
+        z-index: 1;
         background: #fdfcfc;
 
     }
@@ -153,7 +153,7 @@
     }
 
     .navbar__links {
-        text-align: center;
+        text-align:right;
         padding: 1rem;
         width: 100%;
         display: table;
@@ -207,7 +207,7 @@
 
 /* Hero Section CSS */
 .main {
-    background-color: #ffffff;
+    background-color: #141414;
 }
 
 .main__container {
@@ -215,13 +215,13 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    margin:  auto;
-    height: 90vh;
+    margin: 0;
+    height: 100vh;
     background-color: #141414;
     z-index: 1;
-    width: 1000%;
-    max-width: 1300px;
-    padding: 0 50px;
+    width: 100%;
+    max-width: 1920px;
+    padding:  0px;
 }
 
 .main__content h1 {
@@ -300,19 +300,19 @@
 
 #main__img {
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 /* Mobile Responsive */
-@media screen and (max-width:900px) {
+@media screen and (max-width:450px) {
     .main__container{
         display:grid;
         grid-template-columns:auto;
         align-items: center;
         justify-self: center;
         width: 100%;
-        margin: 0;
-        height: 90vh;
+        margin: 1;
+        height: 100vh;
     }
 
     .main__content {
@@ -358,7 +358,7 @@
 
 /* Services section CSS */
 .services {
-    background: rgb(20, 20, 20);
+    background: #141414;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,10 +391,10 @@
     width: 400px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, 
-    rgba(0,0,0,0) 10%, 
+    rgba(0,0,0,0) 100%, 
     rgba(17,17,17,0.6) 100%
     ),
-    url('/pics/pics2.jpeg');
+    url('pics3.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -402,10 +402,11 @@
 
 .services__card:nth-child(2) {
     background-image: linear-gradient(to bottom, 
-    rgba(254, 252, 252, 0) 0%, 
+    rgba(254, 252, 252, 0) 100%, 
     rgba(17,17,17,0.6) 100%
     ),
-    url('/pics/pics1.jpeg');
+    url('pics3.jpg');
+    color: #fff
 }
 
 .services h2 {
@@ -440,9 +441,9 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 60px){
+@media screen and (max-width: 50px){
     .services {
-        height: 1600px;
+        height: 800px;
     }
 
     .services h1 {
@@ -451,7 +452,7 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
     .services {
         height: 1200px;
     }
@@ -467,7 +468,7 @@
 
 /* Footer CSS */
 .footer__container {
-    background-color: #121212 ;
+    background-color: #141414 ;
     padding: 2rem 0;
     display: flex;
     flex-direction:column-reverse;
@@ -476,7 +477,7 @@
 }
 
 #footer__logo {
-    color: #000000;
+    color: #faf8f8;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -527,22 +528,22 @@
 
 /* Soical Icons */
 .social__icon--link {
-    color: rgb(31, 31, 31);
+    color: rgb(255, 252, 252);
     font-size: 30px;
 }
 
 .social__media {
-    max-width: 1000px;
-    width: 100%;
+    max-width: 1280px;
+    width: 80%;
 }
 
 .social__media--wrap {
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap:initial;
     align-items: center;
-    width: 90%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 1280px;
     margin: 40px auto 0 auto;
 }
 
@@ -551,7 +552,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    width: 240px;
+    width: 1280px;
 }
 
 .social__logo {
@@ -572,11 +573,11 @@
 
 @media screen and (max-width:830px) {
     .footer__link {
-        padding: 2rem;
+        padding: 8rem;
     }
 
     #footer__logo {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .website__rights {
@@ -592,7 +593,7 @@
     }
 }
 
-@media screen and (max-width: 80px) {
+@media screen and (max-width: 100px) {
     .footer__link--items {
         margin: 0;
         padding: 1px;
